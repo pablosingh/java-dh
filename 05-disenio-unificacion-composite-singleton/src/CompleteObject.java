@@ -9,7 +9,12 @@ public class CompleteObject {
         geometricFigureList = new ArrayList<>();
     }
     public void addGeometricFigure(String code){
-        geometricFigureList.add(GeometricFigureFactory.getInstance().generateGeometricFigure(code));
+        try {
+            GeometricFigure geometricFigure = GeometricFigureFactory.getInstance().generateGeometricFigure(code);
+            geometricFigureList.add(geometricFigure);
+        }catch (GeometricFigureFactoryException e){
+            System.out.println(e.getMessage());
+        }
     }
     public Double calculateTotalArea(){
         Double totalArea = 0.0;

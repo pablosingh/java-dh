@@ -3,10 +3,11 @@
 public class Main {
     public static void main(String[] args) {
         CompleteObject completeObject = new CompleteObject();
-        completeObject.addGeometricFigure("Circle");
-        completeObject.addGeometricFigure("Square");
-        completeObject.addGeometricFigure("Triangle");
-        completeObject.addGeometricFigure("Rectangle");
+        completeObject.addGeometricFigure(GeometricFigureFactory.CODE_CIRCLE);
+        completeObject.addGeometricFigure(GeometricFigureFactory.CODE_SQUARE);
+        completeObject.addGeometricFigure(GeometricFigureFactory.CODE_TRIANGLE);
+        completeObject.addGeometricFigure(GeometricFigureFactory.CODE_RECTANGLE);
+        completeObject.addGeometricFigure("asdfasd");
 
         System.out.println(completeObject.calculateTotalArea());
     }

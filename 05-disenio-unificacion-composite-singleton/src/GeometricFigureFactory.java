@@ -1,5 +1,10 @@
 public class GeometricFigureFactory {
 
+    public static final String CODE_CIRCLE = "Circle";
+    public static final String CODE_RECTANGLE = "Rectangle";
+    public static final String CODE_SQUARE = "Square";
+    public static final String CODE_TRIANGLE = "Triangle";
+
     private static GeometricFigureFactory instance;
 
     private GeometricFigureFactory() {
@@ -10,17 +15,17 @@ public class GeometricFigureFactory {
         }
         return instance;
     }
-    public GeometricFigure generateGeometricFigure(String code){
+    public GeometricFigure generateGeometricFigure(String code) throws GeometricFigureFactoryException{
         switch (code){
-            case "Circle":
+            case CODE_CIRCLE:
                 return new Circle(2.0);
-            case "Rectangle":
+            case CODE_RECTANGLE:
                 return new Rectangle(5.0,6.0);
-            case "Square":
+            case CODE_SQUARE:
                 return new Rectangle(3.0,3.0);
-            case "Triangle":
+            case CODE_TRIANGLE:
                 return new Triangle(10.0, 6.0);
         }
-        return null;
+        throw new GeometricFigureFactoryException(code + " is not a valid code");
     }
 }
