@@ -1,0 +1,4 @@
+[2025-07-13 21:21:18] [INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 3
+[2025-07-13 21:21:18] [INFO ] [AverageList:17] La longitud de la lista es mayor a 5 y el promedio es: 6
+[2025-07-13 21:21:18] [INFO ] [AverageList:20] La longitud de la lista es mayor a 10 y el promedio es: 6
+[2025-07-13 21:21:18] [ERROR] [Main:24] La lista está vacía java.lang.Exception

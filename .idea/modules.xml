@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Test/01-intro-test/01-intro-test.iml" filepath="$PROJECT_DIR$/Test/01-intro-test/01-intro-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-disenio-singleton/02-disenio-singleton.iml" filepath="$PROJECT_DIR$/02-disenio-singleton/02-disenio-singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-disenio-state/03-disenio-state.iml" filepath="$PROJECT_DIR$/03-disenio-state/03-disenio-state.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-disenio-composite/04-disenio-composite.iml" filepath="$PROJECT_DIR$/04-disenio-composite/04-disenio-composite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-disenio-unificacion-composite-singleton/05-disenio-unificacion-composite-singleton.iml" filepath="$PROJECT_DIR$/05-disenio-unificacion-composite-singleton/05-disenio-unificacion-composite-singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-disenio-observer/06-disenio-observer.iml" filepath="$PROJECT_DIR$/06-disenio-observer/06-disenio-observer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-disenio-strategy/07-disenio-strategy.iml" filepath="$PROJECT_DIR$/07-disenio-strategy/07-disenio-strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/02-archivos-test/Anotaciones/Anotaciones.iml" filepath="$PROJECT_DIR$/Test/02-archivos-test/Anotaciones/Anotaciones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/02-archivos-test/Assertions/Assertions.iml" filepath="$PROJECT_DIR$/Test/02-archivos-test/Assertions/Assertions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/02-archivos-test/TestParametrizados/TestParametrizados.iml" filepath="$PROJECT_DIR$/Test/02-archivos-test/TestParametrizados/TestParametrizados.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test/02-archivos-test/ejercicioTesting/ejercicioTesting.iml" filepath="$PROJECT_DIR$/Test/02-archivos-test/ejercicioTesting/ejercicioTesting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-dh.iml" filepath="$PROJECT_DIR$/java-dh.iml" />
+    </modules>
+  </component>
+</project>
