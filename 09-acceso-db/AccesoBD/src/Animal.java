@@ -2,6 +2,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
 
 public class Animal {
 
@@ -20,6 +22,8 @@ public class Animal {
     private static final String SQL_SELECT = "SELECT * FROM ANIMALES";
 
     private static final String SQL_DELETE = "DELETE FROM ANIMALES WHERE ID = 3";
+
+    private static final Logger logger = LogManager.getLogger(Animal.class);
 
     public static void main(String[] args) throws ClassNotFoundException {
         System.out.println(Class.forName("org.h2.Driver"));
@@ -46,12 +50,14 @@ public class Animal {
             // IMPRIMIR POR CONSOLA
             while (rs.next()) {
                 System.out.println("Nombre: " + rs.getString(2) + " - Tipo: " + rs.getString(3));
+                logger.info("Nombre: " + rs.getString(2) + " - " +
+                        "Tipo: " + rs.getString(3));
             }
 
             // BORRAR UN VALOR
             statement.execute(SQL_DELETE);
             System.out.println("ADVERTENCIA: Se borró un animal de la tabla con el id = 3");
-
+            logger.warn("ADVERTENCIA: Se borró un animal de la tabla con el id = 3");
             // NUEVA CONSULTA
             rs = statement.executeQuery(SQL_SELECT);
 
@@ -60,6 +66,8 @@ public class Animal {
             // IMPRIMIR LA CONSULTA
             while (rs.next()) {
                 System.out.println("Nombre: " + rs.getString(2) + " - Tipo: " + rs.getString(3));
+                logger.info("Nombre: " + rs.getString(2) + " - " +
+                        "Tipo: " + rs.getString(3));
             }
 
         } catch (Exception e) {

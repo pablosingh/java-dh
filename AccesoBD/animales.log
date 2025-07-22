@@ -1,8 +1,0 @@
-[2023-11-14 10:01:46] [ INFO ] [Animal:56] Nombre: Molly - Tipo: gato
-[2023-11-14 10:01:46] [ INFO ] [Animal:56] Nombre: Helga - Tipo: perro
-[2023-11-14 10:01:46] [ INFO ] [Animal:56] Nombre: Melba - Tipo: perro
-[2023-11-14 10:01:46] [ INFO ] [Animal:56] Nombre: Rocky - Tipo: tortuga
-[2023-11-14 10:01:46] [ WARN ] [Animal:62] ADVERTENCIA: Se borró un animal de la tabla con el id = 3
-[2023-11-14 10:01:46] [ INFO ] [Animal:73] Nombre: Molly - Tipo: gato
-[2023-11-14 10:01:46] [ INFO ] [Animal:73] Nombre: Helga - Tipo: perro
-[2023-11-14 10:01:46] [ INFO ] [Animal:73] Nombre: Rocky - Tipo: tortuga
