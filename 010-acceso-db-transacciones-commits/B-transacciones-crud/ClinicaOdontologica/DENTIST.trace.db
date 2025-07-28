@@ -1,0 +1,621 @@
+2025-07-27 22:43:35.166480-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 16 more
+2025-07-27 22:43:35.293481-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:43:35.348482-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:43:35.364481-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:43:35.380719-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:43:35.388717-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:45:25.831975-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 16 more
+2025-07-27 22:45:25.953974-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:45:26.014973-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:45:26.026974-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:45:26.040974-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:45:26.050974-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:47:12.636535-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	... 16 more
+2025-07-27 22:47:12.762053-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:38)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:47:12.826050-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:47:12.836048-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:112)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
+2025-07-27 22:47:12.848050-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.engine.Database.<init>(Database.java:304)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 13 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 11 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 16 more
+2025-07-27 22:47:12.857051-03:00 database: org.h2.message.TraceWriterAdapter
+org.h2.message.DbException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:212)
+	at org.h2.command.dml.Set.update(Set.java:420)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.engine.Engine.openSession(Engine.java:259)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:344)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:682)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at ClinicaOdontologica.getConnection(ClinicaOdontologica.java:162)
+	at ClinicaOdontologica.main(ClinicaOdontologica.java:137)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Class "org.h2.message.TraceWriterAdapter" no encontrada
+Class "org.h2.message.TraceWriterAdapter" not found [90086-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 15 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:74)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.h2.message.TraceSystem.setLevelFile(TraceSystem.java:210)
+	... 13 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.h2.message.TraceWriterAdapter.<init>(TraceWriterAdapter.java:27)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	... 16 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	... 18 more
