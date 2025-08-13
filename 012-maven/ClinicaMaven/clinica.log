@@ -1,0 +1,749 @@
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/Statement stat0 = conn0.createStatement();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/stat0.execute("DROP TABLE IF EXISTS DENTIST; CREATE TABLE DENTIST ( ID INT AUTO_INCREMENT PRIMARY KEY, REGISTRATION INT NOT NULL,  NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL)");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:2*/DROP TABLE IF EXISTS DENTIST;
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:9*/CREATE TABLE DENTIST ( ID INT AUTO_INCREMENT PRIMARY KEY, REGISTRATION INT NOT NULL,  NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/stat0.execute("DROP TABLE IF EXISTS PATIENT; CREATE TABLE PATIENT ( ID INT AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL,  CARDIDENTITY VARCHAR(100) NOT NULL,  ADMISSIONOFDATE DATE NOT NULL)");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:1*/DROP TABLE IF EXISTS PATIENT;
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:1*/CREATE TABLE PATIENT ( ID INT AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL,  CARDIDENTITY VARCHAR(100) NOT NULL,  ADMISSIONOFDATE DATE NOT NULL);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn0.close();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:36] Se inició una operación de guardado de odontólogo
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep0 = conn1.prepareStatement("INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?)", 1);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep0.setInt(1, 132);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep0.setString(2, "Vanina");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep0.setString(3, "Godoy");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep0.execute();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1 t:3*/INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?) {1: 132, 2: 'Vanina', 3: 'Godoy'};
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs2 = prep0.getGeneratedKeys();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs2.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs2.getInt(1);
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:51] Este es el odontólogo que se guardó: Vanina
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs2.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn1.close();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:36] Se inició una operación de guardado de odontólogo
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep1 = conn2.prepareStatement("INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?)", 1);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep1.setInt(1, 456);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep1.setString(2, "Juan");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep1.setString(3, "Perez");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep1.execute();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1 t:1*/INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?) {1: 456, 2: 'Juan', 3: 'Perez'};
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs3 = prep1.getGeneratedKeys();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.getInt(1);
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:51] Este es el odontólogo que se guardó: Juan
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn2.close();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:36] Se inició una operación de guardado de odontólogo
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep2 = conn3.prepareStatement("INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?)", 1);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setInt(1, 789);
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setString(2, "Carlos");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setString(3, "Suarez");
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.execute();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1 t:1*/INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?) {1: 789, 2: 'Carlos', 3: 'Suarez'};
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs4 = prep2.getGeneratedKeys();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs4.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs4.getInt(1);
+[2025-08-12 21:09:08] [INFO ] [DentistDaoH2:51] Este es el odontólogo que se guardó: Carlos
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs4.next();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn3.close();
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:08] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:08] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:72] Iniciando la búsqueda de un odontólogo
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep3 = conn4.prepareStatement("SELECT * FROM DENTIST WHERE ID = ?");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : calculate cost for plan [PUBLIC.DENTIST]
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   for table filter PUBLIC.DENTIST
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.230 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   best plan item cost 227,7 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : plan cost 228,7
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep3.setInt(1, 2);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs5 = prep3.executeQuery();
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:34 #:1 t:1*/SELECT * FROM DENTIST WHERE ID = ? {1: 2};
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.next();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.getInt(1);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.getInt(2);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.getString(3);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.getString(4);
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:84] Consultamos el odontólogo con id: 2 es:  con nombre: Juan, con apellido: Perez
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs5.next();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn4.close();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:105] Iniciando la actualización de un odontólogo
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep4 = conn5.prepareStatement("UPDATE DENTIST SET REGISTRATION=?, NAME=?, LASTNAME=? WHERE ID=?");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.230 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setInt(1, 132);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setString(2, "Andrea");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setString(3, "Godoy");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setInt(4, 1);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.execute();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1*/UPDATE DENTIST SET REGISTRATION=?, NAME=?, LASTNAME=? WHERE ID=? {1: 132, 2: 'Andrea', 3: 'Godoy', 4: 1};
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:118] El atributo actualizado: Andrea
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn5.close();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn6 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep5 = conn6.prepareStatement("DELETE FROM DENTIST WHERE ID=?");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.230 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep5.setInt(1, 2);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep5.execute();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:30 #:1*/DELETE FROM DENTIST WHERE ID=? {1: 2};
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:09:09] [WARN ] [DentistDaoH2:144] Cuidado se eliminó el odontólogo con id: 2
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn6.close();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:161] Iniciando la búsqueda de todos los odontólogos
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn7 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep6 = conn7.prepareStatement("SELECT * FROM DENTIST");
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : calculate cost for plan [PUBLIC.DENTIST]
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   for table filter PUBLIC.DENTIST
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   best plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : plan cost 10.221
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs8 = prep6.executeQuery();
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL #:2*/SELECT * FROM DENTIST;
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.next();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getInt(1);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getInt(2);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getString(3);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getString(4);
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:179] Encontramos los odontólogos con id: 1 ,matrícula: 132 ,nombre: Andrea ,apellido: Godoy
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.next();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getInt(1);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getInt(2);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getString(3);
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.getString(4);
+[2025-08-12 21:09:09] [INFO ] [DentistDaoH2:179] Encontramos los odontólogos con id: 3 ,matrícula: 789 ,nombre: Carlos ,apellido: Suarez
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs8.next();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn7.close();
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:09:09] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:09:09] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:72] Iniciando la búsqueda de un odontólogo
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn0 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep0 = conn0.prepareStatement("SELECT * FROM DENTIST WHERE ID = ?");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : calculate cost for plan [PUBLIC.DENTIST]
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   for table filter PUBLIC.DENTIST
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   best plan item cost 227,7 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : plan cost 228,7
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep0.setInt(1, 2);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs0 = prep0.executeQuery();
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:34 t:1*/SELECT * FROM DENTIST WHERE ID = ? {1: 2};
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs0.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn0.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:161] Iniciando la búsqueda de todos los odontólogos
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn1 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep1 = conn1.prepareStatement("SELECT * FROM DENTIST");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : calculate cost for plan [PUBLIC.DENTIST]
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   for table filter PUBLIC.DENTIST
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   best plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : plan cost 10.221
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs1 = prep1.executeQuery();
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL #:2*/SELECT * FROM DENTIST;
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getInt(1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getInt(2);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getString(3);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getString(4);
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:179] Encontramos los odontólogos con id: 1 ,matrícula: 132 ,nombre: Andrea ,apellido: Godoy
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getInt(1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getInt(2);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getString(3);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.getString(4);
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:179] Encontramos los odontólogos con id: 3 ,matrícula: 789 ,nombre: Carlos ,apellido: Suarez
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs1.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn1.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:105] Iniciando la actualización de un odontólogo
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn2 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep2 = conn2.prepareStatement("UPDATE DENTIST SET REGISTRATION=?, NAME=?, LASTNAME=? WHERE ID=?");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setInt(1, 12345);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setString(2, "Juan Andres");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setString(3, "Perez");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.setInt(4, 1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep2.execute();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1 t:1*/UPDATE DENTIST SET REGISTRATION=?, NAME=?, LASTNAME=? WHERE ID=? {1: 12345, 2: 'Juan Andres', 3: 'Perez', 4: 1};
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:118] El atributo actualizado: Juan Andres
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn2.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:72] Iniciando la búsqueda de un odontólogo
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn3 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep3 = conn3.prepareStatement("SELECT * FROM DENTIST WHERE ID = ?");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : calculate cost for plan [PUBLIC.DENTIST]
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   for table filter PUBLIC.DENTIST
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 10.220 index PUBLIC.DENTIST.tableScan
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Table      :     potential plan item cost 230 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       :   best plan item cost 227,7 index PUBLIC.PRIMARY_KEY_8
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] Plan       : plan cost 228,7
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep3.setInt(1, 1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs3 = prep3.executeQuery();
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:34 #:1*/SELECT * FROM DENTIST WHERE ID = ? {1: 1};
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.getInt(1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.getInt(2);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.getString(3);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.getString(4);
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:84] Consultamos el odontólogo con id: 1 es:  con nombre: Juan Andres, con apellido: Perez
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs3.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn3.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn4 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/Statement stat0 = conn4.createStatement();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/stat0.execute("DROP TABLE IF EXISTS DENTIST; CREATE TABLE DENTIST ( ID INT AUTO_INCREMENT PRIMARY KEY, REGISTRATION INT NOT NULL,  NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL)");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:2*/DROP TABLE IF EXISTS DENTIST;
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:8*/CREATE TABLE DENTIST ( ID INT AUTO_INCREMENT PRIMARY KEY, REGISTRATION INT NOT NULL,  NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/stat0.execute("DROP TABLE IF EXISTS PATIENT; CREATE TABLE PATIENT ( ID INT AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL,  CARDIDENTITY VARCHAR(100) NOT NULL,  ADMISSIONOFDATE DATE NOT NULL)");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:1*/DROP TABLE IF EXISTS PATIENT;
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL t:1*/CREATE TABLE PATIENT ( ID INT AUTO_INCREMENT PRIMARY KEY, NAME VARCHAR(100) NOT NULL,  LASTNAME VARCHAR(100) NOT NULL,  CARDIDENTITY VARCHAR(100) NOT NULL,  ADMISSIONOFDATE DATE NOT NULL);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn4.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:36] Se inició una operación de guardado de odontólogo
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opening D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica (build 232)
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for PATIENT 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock PATIENT 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database opened D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database connecting session #3 to D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL */SET TRACE_LEVEL_FILE 4;
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/**/Connection conn5 = DriverManager.getConnection("jdbc:h2:file:D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica;TRACE_LEVEL_FILE=4", "SA", "");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/PreparedStatement prep4 = conn5.prepareStatement("INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?)", 1);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setInt(1, 555);
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setString(2, "Carolina");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.setString(3, "Garro");
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/prep4.execute();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write requesting for DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write ok DENTIST 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:jdbc[3] 
+/*SQL l:64 #:1 t:3*/INSERT INTO DENTIST (REGISTRATION, NAME, LASTNAME) VALUES(?,?,?) {1: 555, 2: 'Carolina', 3: 'Garro'};
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared write unlock DENTIST 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/ResultSet rs6 = prep4.getGeneratedKeys();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs6.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs6.getInt(1);
+[2025-08-12 21:12:12] [INFO ] [DentistDaoH2:51] Este es el odontólogo que se guardó: Carolina
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/rs6.next();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:jdbc[3] 
+/**/conn5.close();
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 3 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnecting session #3
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closing D:/Codigo/java-dh/011-dao/ClinicaOdontologicaDAO/DBClinica
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive requesting for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive added for SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 exclusive unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 2 shared read unlock SYS 
+[2025-08-12 21:12:12] [DEBUG] [h2database:63] DBClinica:lock 1 shared read unlock SYS 
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database closed
+[2025-08-12 21:12:12] [INFO ] [h2database:66] DBClinica:database disconnected session #3
