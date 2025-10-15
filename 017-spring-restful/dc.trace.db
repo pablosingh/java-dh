@@ -1,0 +1,3 @@
+2025-10-15 11:19:05.120781-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTISTS" not found (this database is empty); SQL statement:
+SELECT * FROM DENTISTS [42104-224]
